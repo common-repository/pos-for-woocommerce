@@ -1,0 +1,33 @@
+.pos-status-spinner-container {
+    z-index: 1000;
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pos-status-spinner {
+    z-index: 1001;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    width: 30px;
+    height: 30px;
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #ffffff;
+    border-radius: 50%;
+    animation: pos-status-spinner 1s linear infinite;
+}
+
+@keyframes pos-status-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
